@@ -226,7 +226,7 @@ void hourInc(void){
 		//Write hours back to the RTC
 		wiringPiI2CReadReg8(RTC, HOUR_REGISTER);
 		hours++;
-		if (hours  == 23)
+		if (hours  == 24)
                 {
 			hours = 0;
 		}
